@@ -2,6 +2,11 @@
     position: relative;
 }
 
+.webcamCapture__webcam {
+    color: grey;
+    height: 400px;
+}
+
 .webcamCapture__button {
     position: absolute;
     bottom: 0;
@@ -9,4 +14,12 @@
     transform: translate(-50%, -50%);
     cursor: pointer;
     color: white;
+}
+
+.webcamCapture__chatIcon {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: white;
+    cursor: pointer;
 }
