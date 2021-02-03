@@ -1,6 +1,51 @@
-# Getting Started with Create React App
+# React Snapchat Clone
 
+A clone of Snapchat (social media app), built with ReactJs, Firebase, Redux Toolkit and Material-UI.
+
+Visit the Project here: https://snapchat-clone-55089.web.app/
+
+## Project Screen Shots
+
+![login](https://user-images.githubusercontent.com/25431607/106753573-d82acd80-6651-11eb-8940-5b0986984efd.png)
+
+![landing](https://user-images.githubusercontent.com/25431607/106753863-3fe11880-6652-11eb-8b77-e5cf5385941d.png)
+
+![preview](https://user-images.githubusercontent.com/25431607/106753923-54251580-6652-11eb-85d9-805855db8dd7.png)
+
+![chat](https://user-images.githubusercontent.com/25431607/106754086-89316800-6652-11eb-8568-da2e0a5877c7.png)
+
+
+## Installation and Setup Instructions
+
+Clone down this repository. You will need `node` and `npm` installed globally on your machine.  
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Additional Files
+
+Add a file called `firebase.js` in the root directory and add your own firebaseConfig as beflow:
+
+```javascript
+import firebase from 'firebase';
+
+const firebaseConfig = {
+    apiKey: "",
+    authDomain: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: ""
+  };
+
+const firebaseApp = firebase.initializeApp(firebaseConfig);
+const db = firebaseApp.firestore();
+const auth = firebase.auth();
+const storage = firebase.storage();
+const provider = new firebase.auth.GoogleAuthProvider();
+
+export {
+    db, auth, storage, provider
+}
+```
 
 ## Available Scripts
 
@@ -14,57 +59,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Reflection
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  - This is a side project I developed as part of learning ReactJs.
+  - I wanted to understand how to implement the webcam feature in a React Application, so what better clone to make for the process of learning the same than Snapchat.
+  - This app involves the use of external npm libraries such as "react-webcam", "react-countdown-circle-timer" and "firebase".
+  - I have bootstrapped the Redux template using the command `npx create-react-app --template redux`. This helps to minimize the initial setup and invest more time into the main logic of the app and also deals with the initial setup of redux in the app using a package called "@reduxjs/toolkit". The state management is done using Redux. I also added `react-router-dom` for routing. The Styling is done using Material UI which is a famous and easy to use for styling React components.
