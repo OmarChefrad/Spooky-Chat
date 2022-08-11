@@ -68,3 +68,4 @@ You will also see any lint errors in the console.
   - I have bootstrapped the Redux template using the command `npx create-react-app --template redux`. This helps to minimize the initial setup and invest more time into the main logic of the app and also deals with the initial setup of redux in the app using a package called "@reduxjs/toolkit". The state management is done using Redux. I also added `react-router-dom` for routing. The Styling is done using Material UI which is a famous and easy to use for styling React components.
 "# Spooky-Chat" 
 "# Spooky-Chat" 
+"# Spooky-Chat" 
