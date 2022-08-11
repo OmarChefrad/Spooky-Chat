@@ -30,3 +30,8 @@
     width: 90vw;
   }
 }
+@media only screen and (max-width: 1200px) {
+  .webcamCapture__webcam {
+    width: 90vw;
+  }
+}

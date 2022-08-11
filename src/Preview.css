@@ -44,7 +44,8 @@
   position: absolute;
   height: 50px;
   bottom: 0;
-  right: -25px;
+  height: 50px;
+  right: -60px;
   transform: translate(-50%, -50%);
   background-color: rgb(0, 166, 255);
   color: aliceblue;
@@ -54,7 +55,7 @@
   border-radius: 200px;
   padding: 7px;
   cursor: pointer;
-  gap: 10px;
+  gap: 5px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
@@ -75,6 +76,9 @@
   font-family: "Press Start 2P", cursive;
   font-family: "PT Sans", sans-serif;
 }
+h2 {
+  font-size: large !important;
+}
 
 .screeShot {
   width: 25vw;
@@ -85,7 +89,7 @@
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1200px) {
   .screeShot {
     width: 90vw;
     height: 82vh;

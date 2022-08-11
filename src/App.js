@@ -4,6 +4,7 @@ import WebcamCapture from "./WebcamCapture"
 import Preview from "./Preview"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import NoFlashIcon from "@mui/icons-material/NoFlash"
+import Chats from "./Chats"
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Routes>
             <Route path="/" element={<WebcamCapture />} />
             <Route path="/preview" element={<Preview />} />
+            <Route path="/chats" element={<Chats />} />
           </Routes>
         </div>
       </Router>

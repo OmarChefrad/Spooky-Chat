@@ -1,0 +1,120 @@
+.chats {
+  position: relative;
+  height: 80vh;
+  width: 35vw;
+  background-image: url("https://cdn.discordapp.com/attachments/961369644130766853/1007302750230556672/snapchat_1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 14px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.chats__headers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  /* display properties */
+  height: 10vh;
+  width: 33.7vw;
+  border-radius: 14px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.chats__search > input {
+  outline: none;
+  background-color: transparent;
+  font-size: 20px !important;
+  border: none;
+  font-weight: 600;
+  flex: 1;
+  color: aliceblue;
+  filter: blur(0.4px);
+  text-shadow: 1px 1px 3px black;
+}
+
+.chats__search > input::placeholder {
+  color: aliceblue;
+  opacity: 1;
+}
+
+.chats__avatar {
+  height: 35px !important;
+  width: 35px !important;
+  padding-right: 5rem;
+  color: aliceblue;
+  cursor: pointer;
+  color: #20e0b0 !important;
+}
+
+.chats__searchIcon {
+  padding-right: 1rem;
+  color: #16cbc6;
+  font-size: 40px !important;
+  cursor: pointer;
+}
+
+.chats__search {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding-left: 8px;
+}
+
+.chats__chatIcon {
+  color: #49a5e7;
+  font-size: 35px !important;
+  cursor: pointer;
+}
+
+.chat__posts {
+  height: 72vh;
+  width: 35vw;
+  margin-top: -9px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: transparent;
+  overflow: scroll;
+}
+
+.chat__posts::-webkit-scrollbar {
+  display: none;
+}
+
+.chat__posts {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+@media only screen and (max-width: 1200px) {
+  .chats {
+    height: 80vh;
+    width: 90vw;
+  }
+  .chats__headers {
+    /* display properties */
+    height: 10vh;
+    width: 85vw;
+  }
+
+  .chats__avatar {
+    height: 40px !important;
+    width: 40px !important;
+    padding-right: 0rem;
+    color: aliceblue;
+    cursor: pointer;
+  }
+  .chats__search > input {
+    width: 100% !important;
+  }
+  .chat__posts {
+    height: 72vh;
+    width: 90vw;
+  }
+}
