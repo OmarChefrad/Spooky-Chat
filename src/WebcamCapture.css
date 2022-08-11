@@ -1,0 +1,32 @@
+.webcamCapture {
+  position: relative;
+}
+.webcamCapture__buton {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  color: aliceblue;
+  z-index: 10;
+}
+
+.webcamCapture__webcam {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -200px 36px -28px inset;
+  text-align: justify;
+  margin-top: 1rem;
+  z-index: 8;
+  right: 0;
+  height: 80vh;
+  width: 25vw;
+  border-radius: 14px;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+@media only screen and (max-width: 700px) {
+  .webcamCapture__webcam {
+    width: 90vw;
+  }
+}

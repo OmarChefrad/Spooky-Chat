@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Manrope&family=PT+Sans&family=Poppins&family=Press+Start+2P&display=swap");
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.preview {
+  position: relative;
+}
+
+.preview__close {
+  cursor: pointer;
+  color: aliceblue;
+  position: absolute;
+  top: 10;
+  margin: 5px;
+  font-size: 30px !important;
+}
+
+.preview__toolbarRight {
+  color: aliceblue;
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.preview__toolbarRight > .MuiSvgIcon-root {
+  font-size: 20px;
+  cursor: pointer;
+  font-size: 30px !important;
+  margin-top: 20px;
+}
+
+.preview-title {
+  color: aliceblue;
+}
+
+.preview__footer {
+  position: absolute;
+  height: 50px;
+  bottom: 0;
+  right: -25px;
+  transform: translate(-50%, -50%);
+  background-color: rgb(0, 166, 255);
+  color: aliceblue;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 200px;
+  padding: 7px;
+  cursor: pointer;
+  gap: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.preview__footer > h2 {
+  font-size: 8px;
+  margin-right: 3px;
+}
+
+.preview__sendIcon {
+  font-size: 30px !important;
+}
+
+.p12 {
+  font-family: "Inconsolata", monospace;
+  font-family: "Manrope", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Press Start 2P", cursive;
+  font-family: "PT Sans", sans-serif;
+}
+
+.screeShot {
+  width: 25vw;
+  height: 80vh;
+  border-radius: 14px;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+@media only screen and (max-width: 700px) {
+  .screeShot {
+    width: 90vw;
+    height: 82vh;
+  }
+}

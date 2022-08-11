@@ -1,26 +1,37 @@
-.App {
+.app {
+  margin: 0;
+  background: linear-gradient(70deg, rgb(0, 76, 255), rgb(0, 253, 211));
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background-color: #fefc01;
-  height: 100vh;
+}
+h1 {
+  margin-top: 0;
+  padding-top: 10px;
+  color: white;
+}
+footer {
+  font-size: 12px;
+  font-family: monospace;
+  padding-top: 27px;
 }
 
-.App__logo {
-  object-fit: contain;
-  height: 100px;
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.App__bodyBackground {
-  background-color: white;
-  height: 400px;
-}
-
-.App__body {
-  background: url("https://www.pngkey.com/png/full/859-8598072_picture-freeuse-library-silhouette-mobile-at-getdrawings-cell.png") no-repeat center;
-  background-size: contain;
-  height: 400px;
-  width: 250px;
-  padding: 73px;
+@media only screen and (max-width: 700px) {
+  h1 {
+    margin-top: 0;
+    padding-top: 10px;
+    color: white;
+  }
+  footer {
+    font-size: 13px;
+    font-family: monospace;
+    padding-top: 25px;
+  }
 }
