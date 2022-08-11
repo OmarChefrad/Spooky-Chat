@@ -66,3 +66,4 @@ You will also see any lint errors in the console.
   - I wanted to understand how to implement the webcam feature in a React Application, so what better clone to make for the process of learning the same than Snapchat.
   - This app involves the use of external npm libraries such as "react-webcam", "react-countdown-circle-timer" and "firebase".
   - I have bootstrapped the Redux template using the command `npx create-react-app --template redux`. This helps to minimize the initial setup and invest more time into the main logic of the app and also deals with the initial setup of redux in the app using a package called "@reduxjs/toolkit". The state management is done using Redux. I also added `react-router-dom` for routing. The Styling is done using Material UI which is a famous and easy to use for styling React components.
+"# Spooky-Chat" 
