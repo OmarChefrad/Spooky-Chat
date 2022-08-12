@@ -54,7 +54,7 @@ const Preview = () => {
           .then((url) => {
             db.collection("posts").add({
               imageUrl: url,
-              // username: user.username,
+              username: "Umar Chefrad",
               read: false,
               // profilePic: user.profilePic,
               timestamp: firebase.firestore.FieldValue.serverTimestamp(),
@@ -81,7 +81,7 @@ const Preview = () => {
         <CropIcon />
         <TimerIcon />
       </div>
-      <img src={cameraImage} alt="preview" className="screeShot"/>
+      <img src={cameraImage} alt="preview" className="screeShot" />
       <div onClick={sendPost} className="preview__footer">
         <h2>Send Now</h2>
         <SendIcon fontSize="small" className="preview__sendIcon" />
