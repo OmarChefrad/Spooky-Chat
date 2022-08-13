@@ -19,13 +19,13 @@ import { v4 as uuid } from "uuid"
 import { storage, db } from "./firebase"
 import firebase from "firebase"
 import AnimatedPage from "./AnimatedPage"
-// import { selectUser } from "./features/appSlice"
+import { selectUser } from "./features/appSlice"
 
 const Preview = () => {
   const cameraImage = useSelector(selectCameraImage)
   const navigate = useNavigate()
   const dispatch = useDispatch()
-  // const user = useSelector(selectUser)
+  const user = useSelector(selectUser)
 
   useEffect(() => {
     if (!cameraImage) {
@@ -33,6 +33,8 @@ const Preview = () => {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [cameraImage, navigate])
+
+  // console.log(user.displayName)
 
   const sendPost = () => {
     const id = uuid()
@@ -55,12 +57,15 @@ const Preview = () => {
           .then((url) => {
             db.collection("posts").add({
               imageUrl: url,
-              username: "Umar Chefrad",
+              username: user.username,
               read: false,
-              // profilePic: user.profilePic,
+              profilePic: user.profilePic,
               timestamp: firebase.firestore.FieldValue.serverTimestamp(),
             })
             navigate("/chats")
+          })
+          .catch((err) => {
+            alert(err.message)
           })
       }
     )
