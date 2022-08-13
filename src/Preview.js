@@ -18,6 +18,7 @@ import SendIcon from "@material-ui/icons/Send"
 import { v4 as uuid } from "uuid"
 import { storage, db } from "./firebase"
 import firebase from "firebase"
+import AnimatedPage from "./AnimatedPage"
 // import { selectUser } from "./features/appSlice"
 
 const Preview = () => {
@@ -70,23 +71,25 @@ const Preview = () => {
   }
 
   return (
-    <div className="preview">
-      <CloseIcon className="preview__close" onClick={closePreview} />
-      <div className="preview__toolbarRight">
-        <TextFieldsIcon />
-        <CreateIcon />
-        <NoteIcon />
-        <MusicNoteIcon />
-        <AttachFileIcon />
-        <CropIcon />
-        <TimerIcon />
+    <AnimatedPage>
+      <div className="preview">
+        <CloseIcon className="preview__close" onClick={closePreview} />
+        <div className="preview__toolbarRight">
+          <TextFieldsIcon />
+          <CreateIcon />
+          <NoteIcon />
+          <MusicNoteIcon />
+          <AttachFileIcon />
+          <CropIcon />
+          <TimerIcon />
+        </div>
+        <img src={cameraImage} alt="preview" className="screenShot" />
+        <div onClick={sendPost} className="preview__footer">
+          <h2>Send Now</h2>
+          <SendIcon fontSize="small" className="preview__sendIcon" />
+        </div>
       </div>
-      <img src={cameraImage} alt="preview" className="screeShot" />
-      <div onClick={sendPost} className="preview__footer">
-        <h2>Send Now</h2>
-        <SendIcon fontSize="small" className="preview__sendIcon" />
-      </div>
-    </div>
+    </AnimatedPage>
   )
 }
 

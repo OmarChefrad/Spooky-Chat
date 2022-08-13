@@ -7,9 +7,10 @@
 }
 
 .chat__readIcon {
-  color: #49a5e7;
+  color: red;
   font-size: 30px !important;
   cursor: pointer;
+  padding-top: 7px;
 }
 
 .chat__avatar {
@@ -26,6 +27,11 @@
   padding-left: 5px;
   flex: 2;
   height: 6vh;
+  cursor: pointer;
+}
+
+.chat__info:hover {
+  opacity: 0.8;
 }
 
 .line-2 {
@@ -42,6 +48,7 @@
   padding-left: 5px;
   flex: 1;
   height: 6vh;
+  cursor: pointer;
 }
 
 .chat__info > p {
@@ -50,4 +57,11 @@
 
 h3 {
   font-weight: 600;
+}
+
+@media only screen and (max-width: 700px) {
+  .line-2 {
+    width: 77vw;
+    padding-left: 1.5rem;
+  }
 }

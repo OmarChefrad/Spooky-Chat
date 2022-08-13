@@ -46,9 +46,9 @@
 }
 
 .chats__avatar {
-  height: 35px !important;
-  width: 35px !important;
-  padding-right: 5rem;
+  height: 50px !important;
+  width: 50px !important;
+  padding-bottom: 2rem;
   color: aliceblue;
   cursor: pointer;
   color: #20e0b0 !important;
