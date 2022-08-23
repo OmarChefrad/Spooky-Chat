@@ -1,4 +1,4 @@
-# A Snapchat Clone
+# Inspired By SnapChat
 
 An authentic app inspired by Snapchat (social media app), built with ReactJs, Firebase, Redux Toolkit and Material-UI.
 
